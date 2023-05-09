@@ -1,0 +1,81 @@
+body {
+  font-family: 'Roboto';
+}
+
+  .uxSkillsSection{
+  
+  }
+  .flexContainer{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+  }
+  .skillItem {
+    width: 33%;
+    margin: 10px;
+    padding: 10px;
+  }
+.mySkills {
+    margin: 50px auto;
+    max-width: 800px;
+    text-align: center;
+  }
+
+.flex {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+}
+#column {
+  background-color: #FFB9DE;
+  flex-direction: column;
+}
+#row {
+  background-color: #FF979C;
+  flex-direction: row;
+}
+
+  /* Grid container styles */
+.workGrid {
+  display: grid;
+  grid-template-rows: 200px 300px 400px; /* Define the height of each row */
+  grid-template-columns: 1fr 1fr; /* Divide the container into two equal columns */
+  grid-template-areas:
+    "header header"
+    "item1 item2"
+    "item1 item3";
+}
+
+/* Grid item styles */
+.gridItem1 {
+  grid-area: Gifted -UX/UI Design Concept;
+  background-color: #FF5677;
+}
+
+.gridItem2 {
+  grid-area: item2;
+  background-color: #FF5677;
+}
+
+.gridItem3 {
+  grid-area: item3;
+  background-color: #FF5677;
+}
+@media only screen and (max-width:600){
+  .flexContainer {
+    flex-direction: column;
+  }
+  
+  .flexContainer > * {
+    width: 100%;
+  }
+  .workGrid{
+    grid-template-areas:
+    "My Work"
+    "Porject 1"
+    "Project 2"
+    "Project 3";
+    grid-template-rows: 100px 200px 200px 200px;
+  }
+}
+ 
